@@ -1,0 +1,74 @@
+div#content {
+  columns:3;
+  break-inside: avoid-column;
+}
+
+.kinkTable {
+  display:inline-block;
+}
+
+input {
+  display:none;
+}
+
+input + label {
+  padding-right:17px;
+  margin:2px;
+  
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+  opacity:.7;
+  
+  border-radius: 50%;
+  border: 2px solid black;
+  background:red;
+}
+
+label:hover {
+  cursor:pointer;
+  
+  opacity:.85;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+input:checked + label {
+  opacity:1;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+label.none {background:white}
+label.fave {background:blue}
+label.like {background:green}
+label.okay {background:yellow}
+label.maybe {background:orange}
+
+table {
+  white-space:nowrap;
+  width:10%;
+  border-collapse:collapse;
+}
+
+tr {
+  line-height:25px;
+}
+
+th {
+  background:gray;
+  color:white;
+  border:1px solid gray;
+}
+
+td {
+  border:1px solid gray;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+td.radio {
+  width:1%;
+}
